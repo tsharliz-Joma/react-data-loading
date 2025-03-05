@@ -36,8 +36,6 @@ app.get("/*", (req, res) => {
   });
 });
 
-app.use(express.static("./build", {index: false}));
-
 app.listen(8080, () => {
   console.log("Server is listening on port 8080");
 });
